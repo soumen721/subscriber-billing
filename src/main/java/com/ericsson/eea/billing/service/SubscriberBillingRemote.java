@@ -1,7 +1,6 @@
 package com.ericsson.eea.billing.service;
 
 import javax.ejb.Remote;
-import javax.xml.datatype.DatatypeConfigurationException;
 
 import com.ericsson.eea.billing.model.MessageEnvelope;
 import com.ericsson.eea.billing.model.SubscriberBillingInfo;
@@ -25,6 +24,6 @@ public interface SubscriberBillingRemote {
      *             retrieval
      */
     public MessageEnvelope<SubscriberBillingInfo> getBillingCycleInfo(SubscriberFilter filter)
-            throws SubscriberBillingInfoNotAvailableException, SubscriberBillingRetrievalFailedException, DatatypeConfigurationException;
+            throws SubscriberBillingInfoNotAvailableException, SubscriberBillingRetrievalFailedException;
 
 }
